@@ -6,7 +6,7 @@ import streamlit as st
 st.title("Visualisasi Data Interaktif")
 
 # Menambahkan gamabr dan teks
-st.image("server.jpg", caption="Identifikasi server dalam mendukung analisis efisiensi")
+st.image("Prak3/server.jpg", caption="Identifikasi server dalam mendukung analisis efisiensi")
 st.markdown("""Dataset ini merepresentasikan performa operasional beberapa server di berbagai wilayah Indonesia, mencakup jumlah data yang diproses, durasi downtime, tingkat efisiensi, serta koordinat lokasi (lintang dan bujur). Visualisasi dibuat untuk membantu mengidentifikasi pola kinerja, membandingkan performa antar lokasi, dan memahami persebaran geografis server dalam mendukung analisis efisiensi serta potensi risiko operasional secara lebih intuitif dan terstruktur.
 """)
 
