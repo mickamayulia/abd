@@ -1,10 +1,24 @@
+# 📊 **Laporan Visualisasi Data dengan Streamlit**
+
+---
+## 👤 **Identitas**
+- **Nama:** *Micka Mayulia Utama*
+- **NIM:** *10231053*
+- **Mata Kuliah:** *Adminstrasi Basis Data* 
+- **Semester:** *5*
+---
+
+# 🗂️ **Step by Step Tugas Visualisasi**
+1. []
+2. [🧱 File vs.py]
+```py
 import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
 
 st.title("Visualisasi Data Interaktif")
 
-# Menambahkan gamabr dan teks
+# Menambahkan gambar dan teks
 st.image("server.jpg", caption="Identifikasi server dalam mendukung analisis efisiensi")
 st.markdown("""Dataset ini merepresentasikan performa operasional beberapa server di berbagai wilayah Indonesia, mencakup jumlah data yang diproses, durasi downtime, tingkat efisiensi, serta koordinat lokasi (lintang dan bujur). Visualisasi dibuat untuk membantu mengidentifikasi pola kinerja, membandingkan performa antar lokasi, dan memahami persebaran geografis server dalam mendukung analisis efisiensi serta potensi risiko operasional secara lebih intuitif dan terstruktur.
 """)
@@ -83,7 +97,8 @@ Area chart menunjukkan akumulasi (*cumulative*) data yang diproses oleh setiap s
 - *seberapa besar ketergantungan sistem terhadap server-server teratas?*  
 - Jika kurva naik tajam di awal, maka sebagian besar beban ditopang oleh sedikit server utama.
 
-Urutan dari nilai terbesar ke terkecil menciptakan kenaikan yang terlihat halus dan stabil. Ini dapat memberi kesan bahwa distribusi beban sudah seimbang, padahal bisa jadi terdapat ketimpangan yang signifikan.
+Urutan dari nilai terbesar ke terkecil menciptakan kenaikan yang terlihat halus dan stabil.  
+Ini dapat memberi kesan bahwa distribusi beban sudah seimbang, padahal bisa jadi terdapat ketimpangan yang signifikan.
 
 Server di posisi puncak berpotensi menjadi *single point of overload* atau bahkan *single point of failure* apabila tidak memiliki backup yang memadai. Ketergantungan ini tidak langsung terlihat hanya dari bentuk kurva yang tampak “rata-rata naik”. Grafik ini berguna untuk mengidentifikasi konsentrasi beban dan potensi risiko sistem, namun harus dibaca bersama data downtime dan efisiensi untuk mendapatkan gambaran ketahanan server yang lebih realistis.
 """)
@@ -121,3 +136,32 @@ Map efektif untuk mengidentifikasi potensi titik lemah geografis dan ketimpangan
 Untuk analisis yang lebih valid, peta sebaiknya dikombinasikan dengan data beban kerja, downtime, dan efisiensi performa masing-masing server.
 """)
     st.write(data[["Server_Location","Data_Processed_TB","Downtime_Hours","Efficiency_%","lat","lon"]])    
+```
+
+5. [🧮 ERD / Relasi Tabel](#-erd--relasi-tabel) 
+<img src="erdsales.png" width="500"> 
+
+6. [📸 Output & Screenshot Dashboard](#-output--screenshot-dashboard)  
+    🖼️ 1. Screenshot Data Customers
+    <img src="datacustomers.png" width="600">
+
+    🖼️ 2. Screenshot Data Orders
+    <img src="dataorders.png" width="600">
+
+    🖼️ 3. Screenshot Data Products
+    <img src="dataproducts.png" width="600">
+
+    🖼️ 4. Screenshot Detail Order
+    <img src="detailorder.png" width="600">
+
+    🖼️ 5. Screenshot Visualisasi Jumlah Pelanggan
+    <img src="v_jmlhplggn.png" width="600">
+
+    🖼️ 6. Screenshot Visualisasi Usia Pelanggan
+    <img src="v_usia.png" width="600">
+
+    🖼️ 7. Screenshot Visualisasi Produk Terlaris 1
+    <img src="v_produk1.png" width="600">
+
+    🖼️ 8. Screenshot Visualisasi Produk Terlaris 2
+    <img src="v_produk2.png" width="600">
